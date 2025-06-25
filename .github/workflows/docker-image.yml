@@ -30,7 +30,9 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t tomasdelizia/docker-graphql-actions:0.0.1 .
+        docker build -t tomasdelizia/docker-graphql-actions:latest .
 
     - name: Push Docker Image
       run: |
         docker push tomasdelizia/docker-graphql-actions:0.0.1
+        docker push tomasdelizia/docker-graphql-actions:latest
